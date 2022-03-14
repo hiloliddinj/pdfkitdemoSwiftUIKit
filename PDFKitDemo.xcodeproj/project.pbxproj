@@ -7,23 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC18D57D27DE7099008DF80B /* MyNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC18D57C27DE7099008DF80B /* MyNavController.swift */; };
 		FCF9FC3A27DB1DCE00320266 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF9FC3927DB1DCE00320266 /* AppDelegate.swift */; };
 		FCF9FC3C27DB1DCE00320266 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF9FC3B27DB1DCE00320266 /* SceneDelegate.swift */; };
-		FCF9FC3E27DB1DCE00320266 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF9FC3D27DB1DCE00320266 /* ViewController.swift */; };
-		FCF9FC4127DB1DCE00320266 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF9FC3F27DB1DCE00320266 /* Main.storyboard */; };
+		FCF9FC3E27DB1DCE00320266 /* EOPDFReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF9FC3D27DB1DCE00320266 /* EOPDFReaderViewController.swift */; };
 		FCF9FC4327DB1DCF00320266 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCF9FC4227DB1DCF00320266 /* Assets.xcassets */; };
 		FCF9FC4627DB1DCF00320266 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCF9FC4427DB1DCF00320266 /* LaunchScreen.storyboard */; };
+		FCF9FC5227DB2EC700320266 /* ButtonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCF9FC5127DB2EC700320266 /* ButtonVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC18D57C27DE7099008DF80B /* MyNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyNavController.swift; sourceTree = "<group>"; };
 		FCF9FC3627DB1DCE00320266 /* PDFKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDFKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCF9FC3927DB1DCE00320266 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCF9FC3B27DB1DCE00320266 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FCF9FC3D27DB1DCE00320266 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FCF9FC4027DB1DCE00320266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FCF9FC3D27DB1DCE00320266 /* EOPDFReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EOPDFReaderViewController.swift; sourceTree = "<group>"; };
 		FCF9FC4227DB1DCF00320266 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FCF9FC4527DB1DCF00320266 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FCF9FC4727DB1DCF00320266 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FCF9FC5127DB2EC700320266 /* ButtonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FC18D57B27DE704C008DF80B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FCF9FC5127DB2EC700320266 /* ButtonVC.swift */,
+				FCF9FC3D27DB1DCE00320266 /* EOPDFReaderViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		FCF9FC2D27DB1DCE00320266 = {
 			isa = PBXGroup;
 			children = (
@@ -58,8 +69,8 @@
 			children = (
 				FCF9FC3927DB1DCE00320266 /* AppDelegate.swift */,
 				FCF9FC3B27DB1DCE00320266 /* SceneDelegate.swift */,
-				FCF9FC3D27DB1DCE00320266 /* ViewController.swift */,
-				FCF9FC3F27DB1DCE00320266 /* Main.storyboard */,
+				FC18D57C27DE7099008DF80B /* MyNavController.swift */,
+				FC18D57B27DE704C008DF80B /* Controllers */,
 				FCF9FC4227DB1DCF00320266 /* Assets.xcassets */,
 				FCF9FC4427DB1DCF00320266 /* LaunchScreen.storyboard */,
 				FCF9FC4727DB1DCF00320266 /* Info.plist */,
@@ -127,7 +138,6 @@
 			files = (
 				FCF9FC4627DB1DCF00320266 /* LaunchScreen.storyboard in Resources */,
 				FCF9FC4327DB1DCF00320266 /* Assets.xcassets in Resources */,
-				FCF9FC4127DB1DCE00320266 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +148,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FCF9FC3E27DB1DCE00320266 /* ViewController.swift in Sources */,
+				FC18D57D27DE7099008DF80B /* MyNavController.swift in Sources */,
+				FCF9FC3E27DB1DCE00320266 /* EOPDFReaderViewController.swift in Sources */,
 				FCF9FC3A27DB1DCE00320266 /* AppDelegate.swift in Sources */,
 				FCF9FC3C27DB1DCE00320266 /* SceneDelegate.swift in Sources */,
+				FCF9FC5227DB2EC700320266 /* ButtonVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FCF9FC3F27DB1DCE00320266 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FCF9FC4027DB1DCE00320266 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FCF9FC4427DB1DCF00320266 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +298,6 @@
 				INFOPLIST_FILE = PDFKitDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +325,6 @@
 				INFOPLIST_FILE = PDFKitDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
